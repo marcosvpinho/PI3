@@ -51,16 +51,16 @@ while True :
         area = cv2.contourArea(contour)
         if(area>300):
             x,y,w,h = cv2.boundingRect(contour)
-            frame = cv2.rectangle(frame,(x,y),(x+w,y+h),(0,0,255),2)
-            cv2.putText(frame,"Azul",(x,y),cv2.FONT_HERSHEY_SIMPLEX,0.7,(0,0,255))
+            frame = cv2.rectangle(frame,(x,y),(x+w,y+h),(255,0,0),2)
+            cv2.putText(frame,"Azul",(x,y),cv2.FONT_HERSHEY_SIMPLEX,0.7,(255,0,0))
           
     (_,contours,hierarchy)=cv2.findContours(yellow,cv2.cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE) 
     for pic, contour in enumerate (contours):
         area = cv2.contourArea(contour)
         if(area>300):
             x,y,w,h = cv2.boundingRect(contour)
-            frame = cv2.rectangle(frame,(x,y),(x+w,y+h),(0,0,255),2)
-            cv2.putText(frame,"Amarelo",(x,y),cv2.FONT_HERSHEY_SIMPLEX,0.7,(0,0,255))       
+            frame = cv2.rectangle(frame,(x,y),(x+w,y+h),(90,255,255),2)
+            cv2.putText(frame,"Amarelo",(x,y),cv2.FONT_HERSHEY_SIMPLEX,0.7,(90,255,255))     
             
     cv2.imshow("detector",frame)
     if cv2.waitKey(5) & 0xFF == ord('q'):
