@@ -1,6 +1,7 @@
-# Códigos e testes elaborados para realização do Projeto Integrador 3 - IFSC.
+# Processamento de imagens utilizando a biblioteca OpenCV
 
-Processamento de imagens utilizando a biblioteca OpenCV.
+Códigos e testes elaborados para realização do Projeto Integrador 3 - IFSC.
+
 Funcionalidades disponíveis:
 
 * Detector de cores:
